@@ -1,0 +1,451 @@
+/* ==========================================================
+   XRAIGA PORTFOLIO
+   ========================================================== */
+
+/* ==========================================================
+   VARIABLES
+   ========================================================== */
+
+:root {
+
+    --primary: #4F8CFF;
+    --primary-hover: #3B82F6;
+
+    --bg: #0F172A;
+    --bg-light: #162032;
+    --bg-lighter: #1E293B;
+
+    --text: #F8FAFC;
+    --text-light: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    --border: #2E3A4D;
+
+    --radius: 14px;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.25);
+
+    --container: 1200px;
+
+    --transition: .25s ease;
+
+}
+
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+button {
+
+    font: inherit;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+
+.container {
+
+    width: min(92%, var(--container));
+
+    margin: auto;
+
+}
+
+section {
+
+    padding: 7rem 0;
+
+}
+
+h1 {
+
+    font-size: clamp(3rem, 7vw, 5rem);
+
+    line-height: 1.05;
+
+    margin-bottom: 1rem;
+
+}
+
+h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+
+}
+
+p {
+
+    color: var(--text-light);
+
+}
+
+
+
+/* ==========================================================
+   NAVBAR
+   ========================================================== */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+    backdrop-filter: blur(14px);
+
+    background: rgba(15,23,42,.75);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 72px;
+
+}
+
+.logo {
+
+    font-size: 1.4rem;
+
+    font-weight: 800;
+
+    color: var(--primary);
+
+}
+
+nav ul {
+
+    display: flex;
+
+    gap: 2rem;
+
+}
+
+nav a {
+
+    color: var(--text-light);
+
+    transition: var(--transition);
+
+}
+
+nav a:hover {
+
+    color: var(--primary);
+
+}
+
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.hero {
+
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.hero-tag {
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+}
+
+.hero-text {
+
+    max-width: 720px;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 2.5rem;
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 1rem;
+
+}
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: .9rem 1.7rem;
+
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+
+    font-weight: 600;
+
+}
+
+.primary {
+
+    background: var(--primary);
+
+}
+
+.primary:hover {
+
+    background: var(--primary-hover);
+
+}
+
+.secondary {
+
+    border: 1px solid var(--border);
+
+}
+
+.secondary:hover {
+
+    background: var(--bg-light);
+
+}
+
+
+
+/* ==========================================================
+   PROJECTS
+   ========================================================== */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+
+    gap: 2rem;
+
+}
+
+
+
+/* ==========================================================
+   CARD
+   ========================================================== */
+
+.card {
+
+    background: var(--bg-light);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 2rem;
+
+    transition: var(--transition);
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+
+    border-top: 1px solid var(--border);
+
+    padding: 2rem 0;
+
+    text-align: center;
+
+    color: var(--text-muted);
+
+}
+
+
+
+/* ==========================================================
+   SCROLLBAR
+   ========================================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--primary);
+
+    border-radius: 100px;
+
+}
+
+
+
+/* ==========================================================
+   SELECTION
+   ========================================================== */
+
+::selection {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:1rem 0;
+
+        gap:1rem;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:1rem;
+
+    }
+
+    section{
+
+        padding:5rem 0;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+}

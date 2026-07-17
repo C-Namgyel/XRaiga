@@ -1,56 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xraiga</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRaiga | Chencho Namgyel Ghalley</title>
+    <meta name="description"
+        content="Personal portfolio of Chencho Namgyel Ghalley, Computer Science (IoT) student at VIT Vellore.">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!-- =======================================================
+                            NAVBAR
+    ======================================================== -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo"> XRaiga</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#uses">Uses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-  <div class="logo">XRAIGA.DEV</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">About</a>
-  </nav>
-</header>
+    <!-- =======================================================
+                            HERO
+    ======================================================== -->
+    <section id="hero">
+        <div class="container hero">
+            <p class="hero-tag">👋 Hey there, I'm</p>
+            <h1>Chencho Namgyel Ghalley</h1>
+            <p class="hero-text">
+                Computer Science (IoT) student at VIT Vellore with registration number 26BCE3066.
+                <br><br>
+                I love building web apps, embedded systems, and occasionally random ideas that somehow work.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-  <h1>Build. Break. Create.</h1>
-  <p>
-    A digital space for experiments, ideas, and chaos-driven development.
-    Powered by curiosity, caffeine, and late-night coding.
-  </p>
-  <button class="btn" onclick="alert('Welcome to Xraiga 🚀')">
-    Enter the Lab
-  </button>
-</section>
+    <!-- =======================================================
+                            ABOUT
+    ======================================================== -->
+    <section id="about">
 
-<section class="cards">
-  <div class="card">
-    <h3>⚡ Projects</h3>
-    <p>Random experiments, IoT builds, and web chaos.</p>
-  </div>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm <strong>Chencho Namgyel Ghalley</strong>, a Computer Science
+                (IoT) student at VIT Vellore from Bhutan 🇧🇹.
+            </p>
+            <br>
+            <p>
+                I enjoy building software that solves real-world problems, from web
+                applications to embedded systems. Most of my projects revolve around
+                JavaScript, Linux, ESP32, Raspberry Pi, and cloud technologies.
+            </p>
+            <br>
+            <p>
+                Outside programming, you'll usually find me playing the piano,
+                guitar, experimenting with Linux, solving Rubik's cubes, or playing
+                chess.
+            </p>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>🧠 Ideas</h3>
-    <p>Half-baked concepts waiting to become reality.</p>
-  </div>
+    <!-- =======================================================
+                            PROJECTS
+    ======================================================== -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>ScholarBell</h3>
+                    <p>
+                        An ESP32-based automated school bell system with a web
+                        interface, offline scheduling, and audio playback.
+                    </p>
+                    <br>
+                    <p><strong>Tech:</strong> ESP32 • C++ • HTML • JavaScript</p>
+                    <br>
+                    <a href="projects/scholarbell/">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Gyeldhoung Ordering System</h3>
+                    <p>
+                        A complete ordering platform for pizza and cakes with online
+                        payment verification, dashboard, and order tracking.
+                    </p>
+                    <br>
+                    <p><strong>Tech:</strong> Node.js • SQLite • HTML • CSS</p>
+                    <br>
+                    <a href="projects/gyeldhoung/">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>CN Cloud</h3>
+                    <p>
+                        A personal cloud storage solution hosted on Raspberry Pi,
+                        allowing secure file uploads, downloads, and sharing.
+                    </p>
+                    <br>
+                    <p><strong>Tech:</strong> Raspberry Pi • Express • SQLite</p>
+                    <br>
+                    <a href="projects/cn-cloud/">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>🛠 Tools</h3>
-    <p>Stuff built to make life slightly less painful.</p>
-  </div>
-</section>
+    <!-- =======================================================
+                            ACHIEVEMENTS
+    ======================================================== -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="card">
+                <h3>2026</h3>
+                <ul>
+                    <li>🎓 Started B.Tech CSE (IoT) at VIT Vellore</li>
+                    <li>💻 Built ScholarBell</li>
+                    <li>🌐 Launched XRaiga.dev</li>
+                    <li>📦 Developed Gyeldhoung Ordering System</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  © 2026 Xraiga.dev — Powered by imagination
-</footer>
+    <!-- =======================================================
+                            BLOG
+    ======================================================== -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Coming Soon...</p>
+        </div>
+    </section>
 
-<script src="./script.js"></script>
+    <!-- =======================================================
+                            USES
+    ======================================================== -->
+    <section id="uses">
+        <div class="container">
+            <h2>Uses</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>💻 Laptop</h3>
+                    <p>Acer Aspire Lite AL15-41</p>
+                </div>
+                <div class="card">
+                    <h3>🖥️ Operating System</h3>
+                    <p>Arch Linux</p>
+                </div>
+                <div class="card">
+                    <h3>⌨️ Editor</h3>
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Browser</h3>
+                    <p>Brave Browser</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Hardware</h3>
+                    <p>ESP32, Arduino & Raspberry Pi</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =======================================================
+                            CONTACT
+    ======================================================== -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>
+                Whether it's a project, collaboration, or just a friendly chat,
+                feel free to reach out!
+            </p>
+            <br>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Email</h3>
+                    <a href="mailto:chencho.namgyel2026@vitstudent.ac.in">chencho.namgyel2026@vitstudent.ac.in</a>
+                </div>
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/C-Namgyel" target="_blank">github.com/C-Namgyel</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================
+                            FOOTER
+    ======================================================== -->
+    <footer>
+        <div class="container">© 2026 Chencho Namgyel Ghalley</div>
+    </footer>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
